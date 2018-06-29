@@ -29,3 +29,21 @@
 # else:
 #     print('succeeded: ' + str(guess)) '''
 
+# def d(x, y):
+#     '''
+#     x: Can be of any type.
+#     y: Can be of any type.
+#     '''
+#     return x > y
+
+# print (d)
+
+
+# x = 12
+# def g(x):
+#     x = x + 1
+#     def h(y):
+#         return x + y
+#     return h(6)
+# print (g(x))
+
