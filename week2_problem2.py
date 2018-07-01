@@ -41,7 +41,7 @@ print ("Lowest payment: " + str(minimal_payment_ar(balance, annualInterestRate))
 # helper method for balance after 12 month
 def after_year_balance_recoursive(balance, annual_interest_rate, monthly_payment, current_month = 0):
     """
-    Get your balance at the end of a current year
+    Get your balance at the end of a current year (using iterative recursion)
 
     Input: balance (float), annual interest rate (%) [0:1], monthly payment in $, optional: current month (1-12)
     Output: balance at the end of a year
@@ -54,7 +54,7 @@ def after_year_balance_recoursive(balance, annual_interest_rate, monthly_payment
     
     balance = (balance - monthly_payment) * (1 + monthly_interest_rate)
     
-    return after_year_balance_recoursive(balance, annual_interest_rate, monthly_payment, current_month + 1)
+    return round(after_year_balance_recoursive(balance, annual_interest_rate, monthly_payment, current_month + 1),2)
 
 # method for finding minimal payment
 def minimal_payment_rec(balance, annual_interest_rate, payment_guess = 10):
