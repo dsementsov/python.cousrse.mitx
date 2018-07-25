@@ -7,10 +7,11 @@
 # but you will have to know how to use the functions
 # (so be sure to read the docstrings!)
 
+import pandas as pd
 import random
 import string
 
-WORDLIST_FILENAME = "C:/Projects/Python/python.cousrse.mitx/week3-hangman/words.txt"
+WORDLIST_FILENAME = "./week3-hangman/words.txt"
 
 def loadWords():
     """
